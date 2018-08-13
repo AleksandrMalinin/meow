@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body id="top">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__wrapper-inner">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <a class="main-header__logo" href="#">
+          <svg viewbox="0 0 20 51" width="33" height="84">
+              <defs>
+                  <clipPath id="a">
+                      <path d="M0 38.077h15V0H0z"/>
+                  </clipPath>
+              </defs>
+              <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 50.77)">
+                  <path d="M0 32.308v-15c0-.18.042-.355.122-.516a19.149 19.149 0 0 1 2.006-3.089C3.77 11.65 5.542 10.385 7.5 10.385c1.958 0 3.73 1.266 5.372 3.318.54.674 1.028 1.392 1.459 2.11.26.433.444.773.547.979.08.16.122.337.122.516v15c0 .637-.517 1.154-1.153 1.154H1.154A1.154 1.154 0 0 1 0 32.308m12.692-1.154V17.608s-.207-.386-.34-.608a17.096 17.096 0 0 0-1.282-1.856c-1.243-1.554-2.5-2.451-3.57-2.451-1.07 0-2.326.897-3.57 2.45-.47.589-.901 1.223-1.282 1.857-.133.222-.34.608-.34.608v13.546z"/>
+                  <path d="M8.654 24.231h4.615a1.154 1.154 0 0 0 0-2.308H8.654v-9.808a1.154 1.154 0 0 0-2.308 0v9.808H1.73a1.153 1.153 0 1 0 0 2.308h4.616v7.5a1.154 1.154 0 0 0 2.308 0zm0 12.692a1.154 1.154 0 1 1-2.308 0v-1.154a1.154 1.154 0 0 1 2.308 0zm0-28.846a1.154 1.154 0 0 1-2.308 0V1.154a1.154 1.154 0 1 1 2.308 0z"/>
+              </g>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <a class="main-nav__link" href="#">
+            Объекты
+          </a>
+          <a class="main-nav__link" href="#">
+            Компания
+          </a>
+          <a class="main-nav__link" href="#">
+            Как купить
+          </a>
+          <a class="main-nav__link" href="#">
+            Агентам
+          </a>
+          <a class="main-nav__link" href="#">
+            Регионам
+          </a>
+          <a class="main-nav__link" href="#">
+            Акции
+          </a>
+          <a class="main-nav__link" href="#">
+            Контакты
+          </a>
+        </nav>
+      </div>
+      <div class="main-header__phone">
+        <a href="tel:8888888898" class="main-header__phone-number">
+          8 888 88 88 98
+          <span class="main-header__caption">
+            Звони скорее!
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="search-results__container">
+      <h1 class="search-results__heading">
+        Найдено 666 квартир
+      </h1>
+      <section class="search-results">
+        <h2 class="visually-hidden">Список найденных квартир</h2>
+        <div class="search-results__wrapper">
+          <div class="search-results__sorting">
+            <span class="search-results__sorting-caption">Сортировать по:</span>
+            <div class="search-results__buttons">
+              <div class="search-results__button">
+                <input class="search-results__input visually-hidden" type="radio" name="sorting" id="price">
+                <label class="search-results__label" for="price">
+                  <span class="search-results__sorting-type">Цене</span>
+                </label>
+              </div>
+              <div class="search-results__button">
+                <input class="search-results__input visually-hidden" type="radio" name="sorting" id="rooms" checked>
+                <label class="search-results__label" for="rooms">
+                  <span class="search-results__sorting-type">Комнатам</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="search-results__items-list">
+            <div style="display: none">
+              <a href="#" class="search-results__item">
+                <div class="search-results__image">
+                  <img src="#" alt="Планировка">
+                  <div class="search-results__promo">
+                    <span class="search-results__promo-number"></span>
+                    <span class="search-results__promo-word"></span>
+                  </div>
+                </div>
+                <div class="search-results__description">
+                  <p class="search-results__caption">
+                    <span class="search-results__type"></span>
+                    <span class="search-results__rooms"></span>
+                  </p>
+                  <div class="search-results__info">
+                    <p class="search-results__decoration">
+                    </p>
+                    <div class="search-results__space-wrapper">
+                      <p class="search-results__space">
+                        <span class="search-results__space-number"></span>
+                        <span class="search-results__square">2</span>
+                      </p>
+                      <span>площадь</span>
+                    </div>
+                    <p class="search-results__floor">
+                      <span class="search-results__floor-number"></span>
+                      <span class="search-results__floor-word">этаж</span>
+                    </p>
+                  </div>
+                  <span class="search-results__price">
+                  </span>
+                </div>
+                <span class="search-results__status">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="search-results__more">
+          Показать еще 20
+        </button>
+      </section>
+    </div>
+    <div id="back-to-top">
+      <a href="#top" class="back-to-top">
+      </a>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__promo">
+        <h3 class="main-footer__heading">
+          Успей купить!
+        </h3>
+        <p class="main-footer__paragraph">
+          Подпишись и успей словить все акции
+        </p>
+      </div>
+      <form class="main-footer__form" action="/" method="post">
+        <div class="main-footer__wrapper-inner">
+          <label for="email">
+            <input class="main-footer__email" type="email" name="email" placeholder="E-mail" id="email">
+          </label>
+          <button class="main-footer__submit" type="submit">
+            Подписаться
+          </button>
+        </div>
+        <div class="main-footer__wrapper-inner">
+          <div class="main-footer__check-box-wrapper">
+            <input class="main-footer__subscribe visually-hidden" type="checkbox" name="subscribe" id="subscribe">
+            <label class="main-footer__subscribe-label" for="subscribe">
+              подписаться на новости
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
